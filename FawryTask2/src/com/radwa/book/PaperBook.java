@@ -15,8 +15,9 @@ public class PaperBook extends Book {
           throw new  OutOfStockException("The Book is Out Of Stock");
       }
       inStock -= quantity;
-      System.out.println("Book send to " + address);
-      System.out.println("Paid amount = " + (price * quantity));
+       ShippingService.send(address);
+      System.out.println("Paid amount = " + (getPrice() * quantity));
+
   }
 
     public int getInStock() {

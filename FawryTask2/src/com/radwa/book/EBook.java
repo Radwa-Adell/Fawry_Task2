@@ -17,7 +17,7 @@ public class EBook extends Book {
             throw new RuntimeException(" EBook can only be bought one at a time.");
         }
 
-        System.out.println(" Sending the "+getTitle()+" book to " + email);
+        MailService.send(email);
         System.out.println(" Paid amount = " + price);
     }
 }

@@ -3,8 +3,8 @@ package com.radwa.book;
 public abstract class Book {
     protected String ISBN;
     protected String title;
-   protected String author;
-   protected int year;
+    protected String author;
+    protected int year;
     protected double price;
 
 
